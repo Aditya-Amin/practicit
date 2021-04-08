@@ -1,0 +1,226 @@
+/* Custom Stylesheet */
+:root{
+  --theme-color:#aedadb
+}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav a.sidenav-trigger {
+  display: block;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: var(--theme-color);
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+/*===== banner styles ======*/
+#banner-background {
+  height: 600px;
+  background: var(--theme-color);
+  position: relative;
+}
+
+h1.header.black-text {
+  text-transform: uppercase;
+  line-height: 2.2rem;
+}
+
+.banner-contents {
+  width: 60%;
+  padding: 60px 0;
+}
+
+.banner-contents p.small-content {
+  font-size:16px!important;
+  font-style: italic;
+  color: #333;
+}
+
+.banner-contents h5.header.s4.black-text {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+#banner-img {
+  width: 62%;
+  height: 124%;
+  position: absolute;
+  right: -20%;
+  top: -20%;
+}
+
+#banner-img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*====== tabs styles ======*/
+.tabs li.tab a {
+  color: #333;
+  text-transform: capitalize;
+  text-overflow: unset;
+}
+
+.tabs .active{
+  background-color: #144f91!important;
+  color: #fff!important;
+}
+
+.tabs .indicator{
+  background-color: var(--theme-color)!important;
+}
+
+ul.tabs {
+  width: 50%;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.tab-widget{
+  padding: 0!important;
+}
+
+ul.tab-widget-list li {
+  margin-bottom: 0;
+}
+ul.tab-widget-list li:nth-child(2n+1) {
+  background: #ddd;
+}
+
+
+/*======= module section styles =======*/
+.module-section {
+  background-color: var(--theme-color);
+}
+
+h4.module-section-title {
+  text-transform: uppercase;
+}
+
+.module {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h6.module-heading {
+  color: #a5226e;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.module-thumbnail img {
+  width: 100%;
+}
+
+p.module-text {
+  text-align: center;
+  font-weight: 600;
+}
+a.btn.module-btn {
+  background: #a5226e;
+}
+
+.module-bg img {
+  width: 100%;
+}
+
+.module-bg {
+  margin-top: 50px;
+  position: relative;
+}
+
+.module-contents {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  right: 38%;
+  color: #fff;
+}
+
+a.btn.module-contents-btn {
+  background: #0e508d;
+}
+
+.icon-card {
+  background: #fff;
+  padding: 20px;
+}
+
+span.icon {
+  font-size: 25px;
+  background: #dde2e8;
+  padding: 12px;
+  border-radius: 100px;
+}
+
+h6.icon-card-title {
+  color: #919191;
+  margin-left: 6px;
+  margin-top: 20px;
+}
+
+.row.icons-card {
+  position: relative;
+  top: -82px;
+}
+
+a.module-read-more {
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  color: #333;
+  position: relative;
+  top: -100px;
+}
+
+
+
