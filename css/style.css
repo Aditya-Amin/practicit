@@ -146,6 +146,8 @@ h4.module-section-title {
   background: #fff;
   padding: 20px;
   text-align: center;
+  height: 430px;
+  overflow: hidden;
 }
 
 h6.module-heading {
@@ -193,6 +195,8 @@ a.btn.module-contents-btn {
 .icon-card {
   background: #fff;
   padding: 20px;
+  height: 130px;
+  overflow: hidden;
 }
 
 span.icon {
