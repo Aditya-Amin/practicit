@@ -40,7 +40,8 @@
     }
 
     .help-img {
-        left: -15px;
+        left: 0px;
+        top: 4px;
     }
 
     p.footer-text.white-text {
@@ -63,5 +64,13 @@
     a.book-now-btn {
         left: 0;
         top: 20px;
+    }
+
+    .help-img img {
+        width: 100%;
+    }
+
+    .help-contents {
+        padding: 30px 0;
     }
 }
