@@ -32,8 +32,9 @@
     }
 
     .module-contents {
-        left: 15%;
+        left: 20%;
         right: 15%;
+        top: 2%;
     }
     a.module-read-more {
         position: unset;
@@ -85,13 +86,13 @@
     }
 
     .row.icons-card .row .col.s12 {
-        width: 60%;
+        width: 85%;
         margin: 0 auto;
     }
 
     #banner-img {
-        width: 45%;
-        height: 73%;
+        width: 55%;
+        height: 85%;
         top: -17%;
     }
 
