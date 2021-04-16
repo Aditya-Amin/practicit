@@ -54,7 +54,45 @@
     }
 
     nav .brand-logo {
-        left: 10%!important;
+        left: 16%!important;
+    }
+
+    h5.module-heading-title {
+        font-size: 27px;
+    }
+
+    .tutor-background {
+        height: 300px;
+    }
+    .tutors-wrapper .row .col.s12 {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .tutors-wrapper .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tutor-card {
+        margin-bottom: 25px;
+    }
+
+    .row.icons-card .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row.icons-card .row .col.s12 {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #banner-img {
+        width: 45%;
+        height: 73%;
+        top: -17%;
     }
 
     .help-bottom {
