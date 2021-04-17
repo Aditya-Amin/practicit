@@ -16,6 +16,7 @@
 
     h4.module-section-title {
         text-align: center;
+        font-size: 20px;
     }
 
     .module {
@@ -55,7 +56,7 @@
     }
 
     nav .brand-logo {
-        left: 16%!important;
+        left: 25%!important;
     }
 
     h5.module-heading-title {
@@ -111,5 +112,42 @@
 
     .help-contents {
         padding: 30px 0;
+    }
+
+    .form-img {
+        display: none;
+    }
+}
+
+
+/*======= Small Screen ========*/
+@media only screen and (max-width:320px){
+    h5.module-heading-title {
+        font-size: 20px;
+    }
+
+    h1.header.black-text {
+        font-size: 30px;
+    }
+
+    .banner-contents h5.header.s4.black-text {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .banner-contents {
+        padding: 30px 0;
+    }
+
+    .parallax-container {
+        min-height: 350px;
+    }
+
+    #banner-img {
+        height: 70%;
+    }
+
+    h2.help-title {
+        font-size: 28px;
     }
 }

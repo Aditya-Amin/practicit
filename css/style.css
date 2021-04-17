@@ -159,6 +159,8 @@ h4.module-section-title {
   text-align: center;
   height: 450px;
   overflow: hidden;
+  margin-bottom: 30px;
+
 }
 
 h6.module-heading {
@@ -249,8 +251,6 @@ a.module-read-more {
   text-transform: uppercase;
   border-bottom: 2px solid;
   color: #333;
-  position: relative;
-  top: -100px;
 }
 
 
@@ -361,6 +361,7 @@ textarea.input-msg {
 .form-img {
   width: 100%;
   margin: 0 auto;
+  padding-top: 200px;
 }
 
 a.btn.form-btn {
@@ -411,6 +412,7 @@ a.btn.form-btn {
 45deg
 , #f8f8f8a3, #f8f8f894);
   padding: 25px 30px;
+  margin-bottom: 30px;
 }
 
 h5.tutor-name {
@@ -442,6 +444,119 @@ ul.tutor-list li span {
   display: inline-block;
   width: 160px;
 }
+
+
+
+
+/*========== login page ==========*/
+.login-form {
+  padding: 100px 0;
+}
+
+button.btn.login-btn.grey.lighten-1 {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.login-form form {
+  background: #fff;
+  padding: 30px;
+}
+
+.login-wrapper {
+  background-image: linear-gradient(#44444470, #4444448a), url(../images/tutorpage_img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*========= Register Page ============*/
+.btn.white.black-text.file-btn {
+  border: 1px solid #333;
+}
+
+.register-wrapper {
+  padding: 100px 0;
+}
+
+.register-form {
+  border: 1px solid #333;
+  border-right: transparent;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+/*========= Tutor Login ============*/
+.login-form.login-form-tutor {
+  padding: 50px 0;
+}
+
+.login-form.login-form-tutor form {
+  box-shadow: 1px 2px 3px rgb(0 0 0 / 50%);
+  padding: 20px;
+}
+
+h4.form-title.center {
+  margin: 0;
+  padding-bottom: 10px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+
+/*=========== practice module page ==========*/
+.module-circle-card.black {
+  width: 185px;
+  height: 185px;
+  border-radius: 100px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 1px 2px 15px rgb(0 0 0 / 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.module-circle-card.black:hover {
+  box-shadow: 1px 20px 30px rgb(0 0 0 / 50%);
+  transition: 0.4s ease;
+}
+
+/*============ Mock Exam Page ===========*/
+.module-square-card {
+  height: 60px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 2px 6px rgb(0 0 0 / 70%);
+}
+.exam-mode-wrapper{
+  height: 80vh;
+  background: var(--theme-color);
+}
+
+.practice-modules-wrapper {
+  background: var(--theme-color);
+}
+
+
+/*=========== tutors page ===========*/
+.tutors-background {
+  height: 400px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.row.totor-bg-wrapper{
+  background: var(--theme-color);
+}
+
 
 /*======= footer styles ======*/
 
