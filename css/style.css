@@ -603,6 +603,29 @@ p.about-qoute {
   margin-top: 45px!important;
 }
 
+
+/*========= Mode Page ========*/
+a.btn.btn-practice, a.btn.btn-exam {
+  background: rgb(71,166,66);
+  background: linear-gradient(
+90deg
+, rgba(71,166,66,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+  width: 220px;
+  height: 60px;
+  padding: 10px 25px;
+  color: #333;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+a.btn.btn-exam{
+  background: rgb(234,71,76);
+  background: linear-gradient(90deg, rgba(234,71,76,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+}
+
 /*======= footer styles ======*/
 
 footer {
