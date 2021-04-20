@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Module 01</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script src="https://kit.fontawesome.com/f9ccef56aa.js" crossorigin="anonymous"></script>
+  <style>
+    .logo img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .user-avatar img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    .user-avatar {
+      width: 65px;
+    }
+
+    .users {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    span.user-name {
+      font-size: 17px;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+
+    .row.exam-header {
+      display: flex;
+      align-items: center;
+    }
+
+    h4.module-title {
+      font-size: 23px;
+      background: #ccc;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 5px 15px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .question-nav {
+      border: 1px solid #333;
+      height: 90vh;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .module-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 17px;
+      margin-top: 15px;
+    }
+
+    ul.question-lists {
+      padding-left: 40px;
+      height: 80vh;
+      overflow-y: auto;
+    }
+
+    ul.question-lists li {
+      list-style-type: disc;
+      margin-top: 15px;
+    }
+
+    ul.question-lists li input {
+      position: unset !important;
+      opacity: 1 !important;
+      margin-left: 20px;
+      pointer-events: all !important;
+    }
+
+    ul.question-lists li a {
+      color: #333;
+      font-weight: 600;
+    }
+
+    ul.question-lists li.active {
+      padding-left: 20px;
+      color: #ccc;
+      transition: 0.5s all;
+    }
+
+    ul.question-lists li.active a {
+      color: #ccc;
+    }
+
+    .question-tab-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      align-items: center;
+    }
+
+    .clock {
+      font-size: 20px;
+      font-weight: 500;
+      width: 200px;
+      padding-left: 55px;
+    }
+
+    #sec,
+    #min {
+      display: inline-block;
+      width: 30px;
+    }
+
+    h6.question-title {
+      font-weight: 500;
+      border: 1px solid #333;
+      padding: 10px;
+    }
+
+    .question-description {
+      height: 330px;
+      overflow-y: auto;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .answers input {
+      border: 1px solid #333 !important;
+      padding: 0 20px !important;
+      box-sizing: border-box !important;
+      margin-right: 10px !important;
+      color: #333 !important;
+    }
+
+    .answers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row exam-header">
+      <div class="col s6">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div class="users">
+          <div class="user-avatar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/User_Avatar.png" alt="">
+          </div>
+          <span class="user-name">Adi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s4">
+        <div class="question-nav">
+          <h4 class="module-title">Mock Exam 01</h4>
+          <div class="module-name">
+            <span>Module: Statistics</span>
+            <a href="#"><i class="fas fa-info-circle"></i></a>
+          </div>
+
+          <ul class="question-lists">
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox" checked>
+            </li>
+
+            <li class="active">
+              <a href="#" data-module="12" data-question="2" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="3" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="4" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="5" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+
+
+
+            <li>
+              <a href="#" data-module="12" data-question="1" class="question">
+                Question 1
+              </a>
+              <input type="checkbox">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col s8">
+        <div class="question-tab">
+          <div class="question-tab-top">
+            <div class="sheets">
+              <a href="#">
+                <i class="far fa-file"></i>
+                <span>Formula Sheet</span>
+              </a>
+            </div>
+
+            <div class="tables">
+              <a href="#">
+                <i class="fas fa-table"></i>
+                <span>Statistical Tables</span>
+              </a>
+            </div>
+
+            <div class="clock">
+              <i class="far fa-clock"></i>
+              <span id="min">90</span>
+              <span>:</span>
+              <span id="sec">00</span>
+              Min
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="question-board">
+            <div class="question-box">
+              <h6 class="question-title">Question 1: This is a question?</h6>
+              <div class="question-description">
+                <p> -1) is given by</p>
+                <p>d = √[ (-1 - (-4)) 2 + (-1 - (-5)) 2 ]</p>
+                <p>Simplify.</p>
+                <p>d = √(9 + 16) = 5</p>
+                <p> -1) is given by</p>
+                <p>d = √[ (-1 - (-4)) 2 + (-1 - (-5)) 2 ]</p>
+                <p>Simplify.</p>
+                <p>d = √(9 + 16) = 5</p>
+                <p> -1) is given by</p>
+                <p>d = √[ (-1 - (-4)) 2 + (-1 - (-5)) 2 ]</p>
+                <p>Simplify.</p>
+                <p>d = √(9 + 16) = 5</p>
+              </div>
+              <div class="answers">
+                <input type="text" placeholder="Answer1" id="answer1">
+                <input type="text" placeholder="Answer2" id="answer2">
+                <input type="text" placeholder="Answer3" id="answer3">
+                <input type="hidden" id="module_id" value="12">
+                <input type="hidden" id="question_id" value="1">
+              </div>
+              <button class="btn black" id="save-question">Save</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(() => {
+
+      // save quuestion
+      $('#save-question').click(() => {
+        let module_id = $('#module_id').val();
+        let question_id = $('#question_id').val();
+        let answer1 = $('#answer1').val();
+        let answer2 = $('#answer2').val();
+        let answer3 = $('#answer3').val();
+
+        if ($('.question-lists li').hasClass('active')) {
+          // let find_active_question = $('.question-lists').find('.active');
+          // let nextQuestion = find_active_question[0].nextElementSibling;
+          // find_active_question[0].classList = '';
+          // $(find_active_question[0]).children('input').prop('checked', true);
+          // $(nextQuestion).addClass('active');
+          $.ajax({
+            url: `/exam/${module_id}/${question_id}`,
+            method: 'POST',
+            data: {
+              answer1: answer1,
+              answer2: answer2,
+              answer3: answer3
+            },
+            success(resp) {
+              if (resp.indexOf('success') == 0) {
+                let find_active_question = $('.question-lists').find('.active');
+                let nextQuestion = find_active_question[0].nextElementSibling;
+                find_active_question[0].classList = '';
+                $(find_active_question[0]).children('input').prop('checked', true);
+                $(nextQuestion).addClass('active');
+              }
+            }
+          });
+        }
+      });
+
+
+      // back previous question
+
+      $('.question').click((e) => {
+        let module_id = $(e.target).data('module');
+        let question_id = $(e.target).data('question');
+
+        $.ajax({
+          url: `/exam/${module_id}/${question_id}`,
+          method: 'GET',
+          success(resp) {
+            $('.question-title').text(resp.title);
+            $('.question-description').text(resp.description);
+            if (resp.answer1 == null) {
+              $('#answer1').hide();
+            } else {
+              $('#answer1').val(resp.answer1);
+            }
+
+            if (resp.answer2 == null) {
+              $('#answer2').hide();
+            } else {
+              $('#answer2').val(resp.answer2);
+            }
+
+            if (resp.answer3 == null) {
+              $('#answer3').hide();
+            } else {
+              $('#answer3').val(resp.answer3);
+            }
+          }
+        })
+      });
+
+
+
+      // clock coundown
+      let init = Math.round(new Date(new Date().toUTCString()).getTime() / 1000) + 660;
+      let curr = Math.round(new Date(new Date().toUTCString()).getTime() / 1000);
+      let timediffsec = init - curr;
+      let min = Math.round(timediffsec / 60);
+      let sec = 60;
+      let getPassedSec = localStorage.getItem('sec');
+      let getPassedMin = localStorage.getItem('min');
+      let countDownSec = 0;
+      if (getPassedSec != null) {
+        if (sec > getPassedSec) {
+          sec -= getPassedSec;
+          $('#sec').text(sec);
+          countDownSec = getPassedSec;
+        }
+      } else {
+        $('#sec').text(sec - 1);
+      }
+
+      if (getPassedMin != null) {
+        min = getPassedMin;
+      }
+      if (min < 10) {
+        $('#min').text(`0${min}`);
+      } else {
+        $('#min').text(min-1);
+      }
+
+      setInterval(() => {
+        sec--;
+        countDownSec++;
+        localStorage.setItem('sec', countDownSec);
+        if (sec == 0) {
+          countDownSec = 0;
+          min--;
+          sec = 60;
+          if (min < 10) {
+            $('#min').text(`0${min}`);
+          } else {
+            $('#min').text(min);
+          }
+          localStorage.setItem('min', min);
+        }
+
+        if (sec < 10) {
+          $('#sec').text(`0${sec}`);
+        } else {
+          $('#sec').text(sec);
+        }
+
+      }, 1000);
+
+
+    })
+  </script>
+
+</body>
+
+</html>
